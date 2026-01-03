@@ -1,0 +1,136 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0b1220;
+  color: #e6eef8;
+}
+.logo img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.site-header {
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.logo { 
+  font-weight: bold; 
+  color: #7dd3fc; 
+}
+.nav-list {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  gap: 16px; 
+}
+.nav-list a {
+  color: #9fb0c8;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.2s ease, transform 0.2s ease;
+}
+.nav-list a:hover { 
+  text-decoration: underline; 
+  color: #7dd3fc; 
+  transform: translateY(-2px); 
+}
+.nav-list a[aria-current="page"] { 
+  color: #7dd3fc; 
+  font-weight: bold; 
+}
+section {
+  background-color: #0f1724;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+h1, h2 { 
+  margin: 0 0 12px 0; 
+}
+p { 
+  margin: 0 0 12px 0; 
+  color: #9fb0c8; 
+}
+ul { 
+  margin: 0 0 12px 20px; 
+}
+.hero img { 
+  width: 100%; 
+  height: auto; 
+  border-radius: 14px; 
+  margin-top: 12px; 
+}
+.service {
+  padding: 12px;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.service:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 8px 20px rgba(2,6,23,0.6); 
+  cursor: pointer; 
+}
+.form-row { 
+  display: flex; 
+  flex-direction: column; 
+  margin-bottom: 12px; 
+}
+label { 
+  font-weight: bold; 
+  margin-bottom: 6px; 
+}
+input, textarea {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: transparent;
+  color: #e6eef8;
+}
+.btn {
+  background-color: #7dd3fc;
+  color: #071018;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover { 
+  opacity: 0.95; 
+  transform: translateY(-2px); 
+}
+footer { 
+  margin-top: 24px; 
+  padding: 12px 0; 
+  color: #9fb0c8; 
+  text-align: center; 
+
+}
+@media (max-width: 600px) {
+  .header-inner { 
+    flex-direction: column; 
+    gap: 12px; 
+  }
+  .nav-list { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
+  .container { 
+    padding: 18px; 
+  }
+}
+

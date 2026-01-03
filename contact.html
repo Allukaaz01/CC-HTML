@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Tech Solutions — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><img src="images/dark logo.png" alt="logo">Tech Solutions</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-form">
+      <h1>Contactez-nous</h1>
+      <form action="#" method="post">
+        <div class="form-row">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="exemple@domaine.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn">Envoyer</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="contact-info">
+      <h2>Nos coordonnées</h2>
+      <p>Adresse: Rte De Nouaceur Angle Rs 114 Et Ct 1029, Casablanca</p>
+      <p>Fixe: 05 12 34 56 78</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; Tech Solutions — 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
